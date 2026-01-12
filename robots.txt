@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://reinigung-rada.de/sitemap.xml
