@@ -272,3 +272,28 @@ img, video, canvas{
 header, .hero, .section, footer{
   overflow-x:hidden;
 }
+
+/* Mobile Header: CTA-Button ausblenden + Branding zentrieren */
+@media (max-width: 768px) {
+
+  /* Angebot-anfordern-Button ausblenden */
+  .nav-cta {
+    display: none !important;
+  }
+
+  /* Header-Inhalt zentrieren */
+  .header-row {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .brand {
+    align-items: center;
+    text-align: center;
+  }
+
+  .brand span,
+  .brand small {
+    display: block;
+  }
+}
