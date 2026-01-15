@@ -273,27 +273,44 @@ header, .hero, .section, footer{
   overflow-x:hidden;
 }
 
-/* Mobile Header: CTA-Button ausblenden + Branding zentrieren */
+
+/* Mobile Header: Logo links, Text mittig, CTA oben aus */
 @media (max-width: 768px) {
 
-  /* Angebot-anfordern-Button ausblenden */
-  .nav-cta {
+  /* CTA-Button im oberen Header ausblenden */
+  .site-header > .container.header-row .nav-cta {
     display: none !important;
   }
 
-  /* Header-Inhalt zentrieren */
+  /* Header-Grundlayout */
   .header-row {
-    justify-content: center;
-    text-align: center;
+    position: relative;
   }
 
+  /* Brand-Link auf volle Breite ziehen */
   .brand {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    text-align: center;
+    width: 100%;
+    gap: 10px;
   }
 
-  .brand span,
-  .brand small {
+  /* Logo bleibt links */
+  .brand img {
+    justify-self: start;
+  }
+
+  /* Textblock exakt mittig */
+  .brand > div {
+    text-align: center;
+    justify-self: center;
+  }
+
+  /* Text sauber untereinander */
+  .brand .name,
+  .brand .tag {
     display: block;
+    line-height: 1.2;
   }
 }
