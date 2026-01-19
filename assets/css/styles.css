@@ -314,3 +314,7 @@ header, .hero, .section, footer{
     line-height: 1.2;
   }
 }
+
+/* Service Cards: kompletter Bereich klickbar */
+.service-hit{display:block;color:inherit;text-decoration:none}
+.service-hit:hover h3{text-decoration:underline}
