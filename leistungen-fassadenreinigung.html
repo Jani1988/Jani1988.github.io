@@ -74,8 +74,14 @@
         "@id": "https://reinigung-rada.de/#organization"
       },
       "areaServed": [
-        { "@type": "City", "name": "München" },
-        { "@type": "AdministrativeArea", "name": "Landkreis Dachau" }
+        {
+          "@type": "City",
+          "name": "München"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Landkreis Dachau"
+        }
       ],
       "description": "Fassadenreinigung in München · Dachau & Umgebung: Schonende Reinigung für Putz, Klinker, Naturstein, Holz oder Glas – gründlich, materialgerecht und zuverlässig.",
       "image": "https://reinigung-rada.de/assets/img/service-5.webp",
@@ -115,10 +121,42 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://reinigung-rada.de/leistungen-fassadenreinigung.html#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://reinigung-rada.de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Leistungen",
+          "item": "https://reinigung-rada.de/leistungen.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Fassadenreinigung",
+          "item": "https://reinigung-rada.de/leistungen-fassadenreinigung.html"
+        }
+      ]
     }
   ]
 }
 </script>
+<style>
+.breadcrumbs{margin:10px 0 0 0;font-size:.95rem}
+.breadcrumbs ol{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:0}
+.breadcrumbs li{display:flex;align-items:center;gap:.5rem}
+.breadcrumbs li+li:before{content:"›";opacity:.6;margin-right:.5rem}
+.breadcrumbs a{text-decoration:none}
+.breadcrumbs a:hover{text-decoration:underline}
+</style>
 </head>
 <body>
 
@@ -129,6 +167,15 @@
 <section class="section">
   <div class="container">
     <h1>Fassadenreinigung in München, Dachau &amp; Umgebung – Für ein gepflegtes Gebäude</h1>
+
+<nav aria-label="Breadcrumb" class="breadcrumbs">
+  <ol>
+    <li><a href="https://reinigung-rada.de/">Startseite</a></li>
+    <li><a href="https://reinigung-rada.de/leistungen.html">Leistungen</a></li>
+    <li aria-current="page">Fassadenreinigung</li>
+  </ol>
+</nav>
+
     <p class="lead">Die Fassade ist das Aushängeschild jedes Gebäudes. Eine saubere, gepflegte Fassade vermittelt Professionalität, Werterhalt und Sorgfalt. Mit unserer Fassadenreinigung entfernen wir Schmutz, Ablagerungen, Staub, Ruß und Algen von Ihrer Gebäudehülle – schonend, gründlich und zuverlässig.</p>
 
     <figure class="card service-hero" style="overflow:hidden; margin-top:14px">

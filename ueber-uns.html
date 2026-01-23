@@ -59,7 +59,9 @@
           "contactType": "customer service",
           "telephone": "+498921541368",
           "email": "info@reinigung-rada.de",
-          "availableLanguage": ["de"],
+          "availableLanguage": [
+            "de"
+          ],
           "areaServed": "DE"
         }
       ]
@@ -109,6 +111,14 @@
   ]
 }
 </script>
+<style>
+.breadcrumbs{margin:10px 0 0 0;font-size:.95rem}
+.breadcrumbs ol{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:0}
+.breadcrumbs li{display:flex;align-items:center;gap:.5rem}
+.breadcrumbs li+li:before{content:"›";opacity:.6;margin-right:.5rem}
+.breadcrumbs a{text-decoration:none}
+.breadcrumbs a:hover{text-decoration:underline}
+</style>
 </head>
 <body>
 
@@ -118,6 +128,14 @@
 <section class="section">
   <div class="container">
     <h1>Über uns – Gebäudereinigung Rada</h1>
+
+<nav aria-label="Breadcrumb" class="breadcrumbs">
+  <ol>
+    <li><a href="https://reinigung-rada.de/">Startseite</a></li>
+    <li aria-current="page">Über uns</li>
+  </ol>
+</nav>
+
 
     <p class="lead">
       Ihre Reinigungsfirma für Dachau, Umgebung &amp; München

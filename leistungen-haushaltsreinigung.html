@@ -74,8 +74,14 @@
         "@id": "https://reinigung-rada.de/#organization"
       },
       "areaServed": [
-        { "@type": "City", "name": "München" },
-        { "@type": "AdministrativeArea", "name": "Landkreis Dachau" }
+        {
+          "@type": "City",
+          "name": "München"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Landkreis Dachau"
+        }
       ],
       "description": "Haushaltsreinigung in München · Dachau & Umgebung: Gründliche, diskrete Reinigung für Wohnungen und Häuser – individuell nach Bedarf (z. B. wöchentlich oder monatlich).",
       "image": "https://reinigung-rada.de/assets/img/service-3.webp",
@@ -115,10 +121,42 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://reinigung-rada.de/leistungen-haushaltsreinigung.html#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://reinigung-rada.de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Leistungen",
+          "item": "https://reinigung-rada.de/leistungen.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Haushaltsreinigung",
+          "item": "https://reinigung-rada.de/leistungen-haushaltsreinigung.html"
+        }
+      ]
     }
   ]
 }
 </script>
+<style>
+.breadcrumbs{margin:10px 0 0 0;font-size:.95rem}
+.breadcrumbs ol{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:0}
+.breadcrumbs li{display:flex;align-items:center;gap:.5rem}
+.breadcrumbs li+li:before{content:"›";opacity:.6;margin-right:.5rem}
+.breadcrumbs a{text-decoration:none}
+.breadcrumbs a:hover{text-decoration:underline}
+</style>
 </head>
 <body>
 
@@ -129,6 +167,15 @@
 <section class="section">
   <div class="container">
     <h1>Haushaltsreinigung in München, Dachau &amp; Umgebung – Sauberkeit für Ihr Zuhause</h1>
+
+<nav aria-label="Breadcrumb" class="breadcrumbs">
+  <ol>
+    <li><a href="https://reinigung-rada.de/">Startseite</a></li>
+    <li><a href="https://reinigung-rada.de/leistungen.html">Leistungen</a></li>
+    <li aria-current="page">Haushaltsreinigung</li>
+  </ol>
+</nav>
+
     <p class="lead">Sie möchten, dass Ihr Zuhause gründlich sauber, gepflegt und hygienisch ist, ohne selbst Zeit dafür aufzuwenden? Mit unserer Haushaltsreinigung in München, Dachau und Umgebung übernehmen wir alle Reinigungsarbeiten zuverlässig, diskret und professionell – individuell auf Ihre Bedürfnisse abgestimmt.</p>
 
     <figure class="card service-hero" style="overflow:hidden; margin-top:14px">
