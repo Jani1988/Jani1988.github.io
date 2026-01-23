@@ -27,6 +27,64 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "CleaningService",
+      "@id": "https://reinigung-rada.de/#business",
+      "name": "Gebäudereinigung Rada",
+      "url": "https://reinigung-rada.de",
+      "telephone": "+498921541368",
+      "email": "info@reinigung-rada.de",
+      "priceRange": "€€",
+      "description": "Professionelle Gebäudereinigung, Haushaltsreinigung sowie Glas- & Fensterreinigung in München · Dachau & Umgebung.",
+      "image": "https://reinigung-rada.de/assets/img/og-image.png",
+      "logo": "https://reinigung-rada.de/assets/img/favicon.png",
+      "sameAs": [
+        "https://maps.app.goo.gl/8dSKALMZ6GwB4jAC6"
+      ],
+      "hasMap": "https://www.google.com/maps/place/Reinigung+Rada,+Asbacher+Str.+7a,+85256+Vierkirchen/@48.3649536,11.4579917,17z/data=!4m6!3m5!1s0x8335eba276a43da1:0xc11a680f3708d10b!8m2!3d48.3649536!4d11.4579917!16s%2Fg%2F11mz9myfts",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Asbacher Straße 7a",
+        "postalCode": "85256",
+        "addressLocality": "Vierkirchen",
+        "addressCountry": "DE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.3649536,
+        "longitude": 11.4579917
+      },
+      "areaServed": [
+        { "@type": "City", "name": "München" },
+        { "@type": "AdministrativeArea", "name": "Landkreis Dachau" }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "telephone": "+498921541368",
+          "email": "info@reinigung-rada.de",
+          "availableLanguage": ["de"],
+          "areaServed": "DE"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "5"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://reinigung-rada.de/#webpage"
+      }
+    },
+    {
       "@type": "Organization",
       "@id": "https://reinigung-rada.de/#organization",
       "name": "Gebäudereinigung Rada",
@@ -61,60 +119,16 @@
         "@id": "https://reinigung-rada.de/#website"
       },
       "about": {
-        "@id": "https://reinigung-rada.de/#service"
+        "@id": "https://reinigung-rada.de/#business"
       },
       "inLanguage": "de-DE"
     },
     {
-      "@type": "CleaningService",
-      "@id": "https://reinigung-rada.de/#service",
-      "name": "Gebäudereinigung Rada",
-      "url": "https://reinigung-rada.de",
-      "telephone": "+498921541368",
-      "email": "info@reinigung-rada.de",
-      "priceRange": "€€",
-      "description": "Professionelle Gebäudereinigung, Haushaltsreinigung sowie Glas- & Fensterreinigung in München · Dachau & Umgebung.",
-      "image": "https://reinigung-rada.de/assets/img/og-image.png",
-      "logo": "https://reinigung-rada.de/assets/img/favicon.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Asbacher Straße 7a",
-        "postalCode": "85256",
-        "addressLocality": "Vierkirchen",
-        "addressCountry": "DE"
-      },
-      "areaServed": [
-        { "@type": "City", "name": "München" },
-        { "@type": "AdministrativeArea", "name": "Landkreis Dachau" }
-      ],
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-          "opens": "08:00",
-          "closes": "18:00"
-        }
-      ],
-      "sameAs": [
-        "https://maps.app.goo.gl/8dSKALMZ6GwB4jAC6"
-      ],
-
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "5"
-      },
-
-      "provider": {
-        "@id": "https://reinigung-rada.de/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://reinigung-rada.de/#webpage"
-      }
-    },
-    {
       "@type": "FAQPage",
       "@id": "https://reinigung-rada.de/#faq",
+      "isPartOf": {
+        "@id": "https://reinigung-rada.de/#webpage"
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -148,10 +162,7 @@
             "text": "Kontaktieren Sie uns per Kontaktformular, E-Mail oder WhatsApp. Wir erstellen ein transparentes Angebot passend zu Ihrem Bedarf."
           }
         }
-      ],
-      "isPartOf": {
-        "@id": "https://reinigung-rada.de/#webpage"
-      }
+      ]
     }
   ]
 }
