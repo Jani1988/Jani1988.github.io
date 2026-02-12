@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
 
-# Rechtliche & technische Seiten nicht indexieren
-Disallow: /impressum.html
-Disallow: /datenschutz.html
-Disallow: /404.html
-
 Sitemap: https://reinigung-rada.de/sitemap.xml
