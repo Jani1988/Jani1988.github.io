@@ -1,0 +1,56 @@
+{
+  "business_name": "Gebäudereinigung Rada",
+  "website": "https://reinigung-rada.de",
+  "region": ["München", "Dachau", "Umgebung"],
+  "service_area_focus": "Lokale Reinigungsdienstleistungen",
+  "primary_goal": "Generierung qualifizierter Angebotsanfragen",
+
+  "services": [
+    "Büroreinigung",
+    "Praxisreinigung",
+    "Treppenhausreinigung",
+    "Haushaltsreinigung",
+    "Glas- und Fensterreinigung",
+    "Bauendreinigung",
+    "Fassadenreinigung",
+    "Unterhaltsreinigung",
+    "Grundreinigung"
+  ],
+
+  "target_customers": [
+    "Unternehmen",
+    "Arztpraxen",
+    "Hausverwaltungen",
+    "Privathaushalte",
+    "Bauunternehmen"
+  ],
+
+  "lead_process": {
+    "required_questions": [
+      "Art der Reinigung",
+      "Flächengröße in Quadratmetern",
+      "Reinigungsintervall",
+      "Standort",
+      "Besondere Anforderungen",
+      "Starttermin"
+    ],
+    "preferred_contact": {
+      "type": "WhatsApp",
+      "url": "https://wa.me/498921541368",
+      "note": "Schnelle Direktanfrage empfohlen"
+    },
+    "secondary_contact": {
+      "contact_form": "https://reinigung-rada.de/kontakt.html",
+      "email": "info@reinigung-rada.de"
+    }
+  },
+
+  "positioning": {
+    "regional": true,
+    "personal_contact": true,
+    "fast_response": true,
+    "flexible_scheduling": true
+  },
+
+  "call_to_action": "Jetzt unverbindliches Angebot anfordern – auch per WhatsApp möglich."
+}
